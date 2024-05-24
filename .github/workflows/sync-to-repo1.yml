@@ -20,10 +20,8 @@ jobs:
         git config --global user.name 'Hitesh'
         git config --global user.email 'hitesh@gmail.com'
 
-    - name: Add repo1 remote
-      run: git remote add repo1 https://ram-wappnet:${{ secrets.REPO1_TOKEN }}@github.com/ram-wappnet/repo1.git
+    - name : "okok"
+      run : |
+        - echo $github.repository
+        - echo "above is repo nameeee"
 
-    - name: Push to repo1
-      run: |
-        git fetch repo1
-        git push repo1 main
