@@ -23,8 +23,8 @@ jobs:
     - name: Push to repo1
       if: github.repository == 'ram-wappnet/repo2'
       run: |
-        git remote add repo3 https://ram-wappnet:${{ secrets.REPO1_TOKEN }}@github.com/ram-wappnet/repo3.git
+        git remote add repo3 https://ram-wappnet:${{ secrets.REPO1_TOKEN }}@github.com/ram-wappnet/repo3
         git remote -v
-        # git fetch repo3
-        # git push repo3 main
+        git fetch repo3
+        git push repo3 main
 
