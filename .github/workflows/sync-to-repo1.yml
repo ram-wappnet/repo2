@@ -22,6 +22,6 @@ jobs:
 
     - name : "okok"
       run : |
-          echo $github.repository
+          echo ${{ github.repository }}
           echo "above is repo nameeee"
 
